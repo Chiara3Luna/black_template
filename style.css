@@ -1,0 +1,218 @@
+/* <i class="fa-sharp fa-solid fa-moon"></i> 
+
+Color: #2B9DF4
+
+font-family: 'Orbitron', sans-serif; */
+:root{
+    --alternative: #2B9DF4;
+}
+
+body{
+    font-family: 'Orbitron', sans-serif;
+    background-color: black;
+    color: white;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+}
+
+h1,h2,h3,h4,h5{
+    color: #2B9DF4;
+}
+
+a:hover{
+    color: var(--alternative)!important;
+}
+
+.navbar{
+    height: 100px;
+}
+
+.collapsing{
+    background-color: black;
+}
+
+.collapse{
+    background-color: black;
+}
+
+.bgMoon{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.45) 50%, rgba(0,0,0,1) 100%), url(./media/moon.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.bgMoon h1{
+    font-size: 74px;
+}
+
+.scrollDown{
+    color: var(--alternative);
+    font-size: 50px;
+}
+
+.numeri{   
+    margin-top: 230px;
+    margin-bottom: 250px;
+}
+
+.numeri h4{
+    margin-bottom: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+.numeri p{
+    font-size: 60px;
+    border-bottom: 2px solid var(--alternative);
+    padding-bottom: 80px;
+}
+
+.bgMarte{
+    background-image: url(./media/moon2.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+}
+
+.grigliaArticoli p{  
+    border-top: 1px solid var(--alternative);
+    width: 20vw;
+    font-size: 15px;
+}
+
+.grigliaArticoli h3{
+    padding-bottom: 15px;
+}
+
+.shuttle{
+    background-image: url(./media/missile-2027068_1280.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 150vh;
+    margin-top: 250px;
+    margin-bottom: 300px;
+}
+
+.altezzaShuttle{
+    margin-top: 340px;
+}
+
+.goto h3{
+    margin-top: 60px;
+}
+
+.squareTop{
+    position: relative;
+    right: 50px;
+}
+.gotop{
+    margin-right: 85px;
+    margin-bottom: 0px;
+}
+
+.squareTop::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px; 
+    border-top: 4px solid var(--alternative);
+    border-left: 4px solid var(--alternative);
+    bottom: 1;
+    left: -140px;
+}
+
+.squareTop::after{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px; 
+    border-top: 4px solid var(--alternative);
+    border-right: 4px solid var(--alternative);
+    bottom: -11px;
+    left: 0px;
+}
+
+.squareBottom{
+    position: relative;
+    right: 50px;
+}
+
+.squareBottom::before{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px; 
+    border-bottom: 4px solid var(--alternative);
+    border-left: 4px solid var(--alternative);
+    bottom: 1;
+    left: -140px;
+}
+
+.squareBottom::after{
+    position: absolute;
+    content: '';
+    height: 15px;
+    width: 15px; 
+    border-bottom: 4px solid var(--alternative);
+    border-right: 4px solid var(--alternative);
+    bottom: -11px;
+    left: 0px;
+}
+
+.bgFooter{
+    background-image: linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0.29735644257703087) 44%, rgba(0,0,0,0) 71%, rgba(0,0,0,1) 100%), url(./media/sunrise-1765027_1920.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.expandFooter{
+    height: 100px;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 25%, rgba(0,0,0,0) 50%, rgba(0,0,0,1) 75%);
+    z-index: 1;
+}
+
+.line{
+    position: relative;
+    z-index: -1;
+}
+
+.line::before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 95vw;
+    border-bottom: 7px solid var(--alternative);
+}
+
+
+/* mediaquery */
+
+@media screen and (max-width:765px) {
+    .grigliaArticoli p{
+        width: 75vw;     
+    }
+
+    .grigliaArticoli{
+        margin: 0!important;
+    }
+
+    .shuttle{
+        background-image: none;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .altezzaShuttle{
+        height: auto;
+    }
+}
